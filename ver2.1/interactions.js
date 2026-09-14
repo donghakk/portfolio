@@ -30,6 +30,6 @@
         observer.unobserve(entry.target);
       }
     }, { threshold: 0.12 });
-    document.querySelectorAll('.case-heading, .index>div>a, .gallery, .lp-videos').forEach(el => observer.observe(el));
+    document.querySelectorAll('.case-heading, .index>div>a, .gallery, .lp-embeds').forEach(el => observer.observe(el));
   }
 })();
