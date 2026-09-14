@@ -12,10 +12,18 @@ def timeline(items):
 def picture(im):
     return f'<figure><a href="{e(im["src"])}" target="_blank" rel="noopener" aria-label="{e(im["alt"])} 크게 보기"><img src="{e(im["src"])}" alt="{e(im["alt"])}" width="{im["width"]}" height="{im["height"]}" loading="lazy"></a><figcaption>{e(im["caption"])}</figcaption></figure>'
 
+def media(p):
+    if not p.get('videos'):
+        return f'<div class="gallery">{"".join(picture(i) for i in p["images"])}</div>'
+    cards=[]
+    for v in p['videos']:
+        cards.append(f'''<figure class="lp-video"><div class="video-heading"><h3>{e(v['title'])}</h3><a href="{e(v['source'])}" target="_blank" rel="noopener">운영 페이지 ↗</a></div><video controls playsinline muted preload="none" poster="{e(v['poster'])}" width="704" height="1252" aria-label="{e(v['title'])} 스크롤 영상"><source src="{e(v['src'])}" type="video/mp4"><a href="{e(v['src'])}">영상 다운로드</a></video><figcaption>{e(v['caption'])}</figcaption><a class="full-capture" href="{e(v['full'])}" target="_blank" rel="noopener">전체 화면 크게 보기 ↗</a></figure>''')
+    return '<div class="lp-videos">'+''.join(cards)+'</div><p class="media-note">실제 운영 LP의 화면 캡처를 스크롤 영상으로 구성했습니다. 화면 속 금액·프로젝트는 서비스 소개용 예시를 포함합니다.</p>'
+
 def project(p, number):
     return f'''<article id="{p['id']}" class="case"><header class="case-heading"><span class="number">{number}</span><div><p class="eyebrow">{e(p['english'])}</p><h2>{e(p['name'])}</h2><p class="case-title">{e(p['title'])}</p></div></header>
 <p class="lead">{e(p['summary'])}</p><div class="meta"><span>{e(p['period'])}</span><span>{e(p['role'])}</span><span>{e(p['team'])}</span></div><p class="small">{e(p['employment'])}</p>
-<div class="gallery">{''.join(picture(i) for i in p['images'])}</div>
+{media(p)}
 <div class="columns"><section><h3>문제</h3><p>{e(p['problem'])}</p></section><section><h3>선택과 구현</h3><p>{e(p['decision'])}</p></section></div>
 <section class="contribution"><h3>내가 맡은 부분</h3><ul>{''.join('<li>'+e(s)+'</li>' for s in p['implementation'])}</ul></section>
 <section class="result"><h3>결과와 현재 상태</h3><p>{e(p['result'])}</p><p class="small">{e(p['scope'])}</p></section>

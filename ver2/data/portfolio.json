@@ -63,44 +63,54 @@
       ],
       "images": [
         {
-          "src": "assets/selfad-mobile-home.jpg",
-          "alt": "셀프애드 모바일 비즈 홈 실제 운영 화면",
-          "caption": "비즈 홈 · 실제 운영 UI. 활동 요약·하단 메뉴의 모바일 구성을 보여줍니다. 캡처 시점에는 진행 중인 프로젝트가 없는 상태입니다.",
-          "shortCaption": "비즈 홈 · 활동 요약과 하단 내비게이션",
-          "width": 375,
-          "height": 812
+          "src": "assets/lp/marketer-poster.png",
+          "alt": "셀프애드 광고주 LP 첫 화면",
+          "caption": "광고주 LP · 실제 운영 화면의 서비스 소개 예시 포함.",
+          "shortCaption": "광고주 LP · 첫 화면",
+          "width": 704,
+          "height": 1252
         },
         {
-          "src": "assets/selfad-mobile-menu.jpg",
-          "alt": "셀프애드 모바일 광고주 메뉴를 펼친 화면",
-          "caption": "모바일 메뉴 · 광고 업무 화면으로 이어지는 내비게이션. 본인 기여: 마이비즈 URL 기반 전환과 모바일 경로 정비.",
-          "shortCaption": "광고주 메뉴 · URL 기반 화면 이동",
-          "width": 375,
-          "height": 812
+          "src": "assets/lp/influencer-poster.png",
+          "alt": "셀프애드 인플루언서 LP 첫 화면",
+          "caption": "인플루언서 LP · 실제 운영 화면의 서비스 소개 예시 포함.",
+          "shortCaption": "인플루언서 LP · 첫 화면",
+          "width": 704,
+          "height": 1252
         },
         {
-          "src": "assets/selfad-mobile-faq.jpg",
-          "alt": "셀프애드 모바일 FAQ 실제 운영 화면",
-          "caption": "FAQ · 질문 검색·분류의 모바일 화면. 본인 기여: FAQ·헤더 진입점·모바일 노출 구현.",
-          "shortCaption": "FAQ · 모바일 검색·분류와 노출",
-          "width": 375,
-          "height": 812
+          "src": "assets/lp/marketer-detail.png",
+          "alt": "셀프애드 광고주 LP 상세 화면",
+          "caption": "광고주 LP · 프로젝트 운영 안내",
+          "shortCaption": "광고주 LP · 프로젝트 운영 안내",
+          "width": 704,
+          "height": 1252
         },
         {
-          "src": "assets/selfad-mobile-signup.jpg",
-          "alt": "셀프애드 모바일 인플루언서 가입 폼 실제 화면",
-          "caption": "인플루언서 가입 · 입력 전 실제 모바일 폼. 전체 가입 기능을 개인 단독 구현으로 제시하지 않습니다.",
-          "shortCaption": "가입 폼 · 입력 전 모바일 화면",
-          "width": 375,
-          "height": 812
+          "src": "assets/lp/influencer-detail.png",
+          "alt": "셀프애드 인플루언서 LP 상세 화면",
+          "caption": "인플루언서 LP · 참여·보상·환전 안내",
+          "shortCaption": "인플루언서 LP · 참여·보상·환전 안내",
+          "width": 704,
+          "height": 1252
+        }
+      ],
+      "videos": [
+        {
+          "title": "광고주 LP",
+          "source": "https://selfad.co.kr/lp/marketer",
+          "src": "assets/lp/marketer-scroll.mp4",
+          "poster": "assets/lp/marketer-poster.png",
+          "full": "assets/lp/marketer-full.jpg",
+          "caption": "모바일 LP · 26초 · 재생 버튼으로 전체 흐름을 확인하세요."
         },
         {
-          "src": "assets/selfad-mobile-consent.jpg",
-          "alt": "셀프애드 모바일 가입 동의 체크박스 실제 화면",
-          "caption": "가입 동의 · 본인 기여: 모바일 동의 체크박스 표시 수정. 동의·가입 제출 없이 화면만 캡처했습니다.",
-          "shortCaption": "가입 동의 · 모바일 체크박스 표시",
-          "width": 375,
-          "height": 812
+          "title": "인플루언서 LP",
+          "source": "https://selfad.co.kr/lp/influencer",
+          "src": "assets/lp/influencer-scroll.mp4",
+          "poster": "assets/lp/influencer-poster.png",
+          "full": "assets/lp/influencer-full.jpg",
+          "caption": "모바일 LP · 26초 · 재생 버튼으로 전체 흐름을 확인하세요."
         }
       ]
     },

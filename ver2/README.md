@@ -1,25 +1,27 @@
 # Portfolio version 2
 
-Separate review version; the repository root remains version 1.
+Current public portfolio: https://donghakk.github.io/portfolio/ver2/
+The repository root redirects here.
 
-- Preview: `/ver2/`
 - Content: `data/portfolio.json`
 - Readable manuscript: `manuscript.md`
 - PDF: `../downloads/kim-donghak-portfolio-v2.pdf` (8 pages)
-- Build web: `PYTHONDONTWRITEBYTECODE=1 python3 ver2/scripts/build.py` from the repository root.
-- Build PDF: run `ver2/scripts/build_pdf.py` with Python containing ReportLab and pypdf. Requires macOS Arial Unicode font.
+- Build web from repository root: `PYTHONDONTWRITEBYTECODE=1 python3 ver2/scripts/build.py`
+- Build PDF: `ver2/scripts/build_pdf.py`; requires ReportLab, pypdf and macOS Arial Unicode font.
 
-Order: introduction/career/education, Index, Selfad, IRM, Sanchaekon, SSAFY projects (PennyPal, Star Diary).
+Order: introduction/photo/career/education, Index, Selfad, IRM, Sanchaekon, SSAFY (PennyPal, Star Diary).
 
-## Image provenance
+## Media provenance
 
-- `assets/profile.png`: user-provided portrait added to the introductory website section and PDF page 1. Original image bytes and aspect ratio retained.
-
-- `assets/selfad-mobile-*.jpg`: actual mobile Chrome captures from https://selfad.co.kr on 2026-09-14 (390×844 viewport override requested by the user). Existing advertiser login reused for Biz Home and navigation; public FAQ and empty influencer signup/consent captured. Screens show no names/contact/customer records, and no form entries or submissions occurred. Web includes five views; PDF uses four representative views. Current UI may include later team changes.
-- `assets/irm-system-design.png` / `.svg`: system architecture diagram built from verified implementation facts. Separates local Naver/Instagram collection, AWS Fargate YouTube collection and email sending, Google Sheets review/state/history, and operational support. Rebuild with `scripts/build_irm_diagram.py` and Poppler; no simulated product UI.
-- `assets/sanchaekon-deployment-concept.png`: generated explanatory mockup of personal CI/CD/infrastructure work. The repeated Nginx denotes the same component in service and release flows. Does not claim automatic rollback.
-- PennyPal and Star Diary images are preserved existing repository assets. Star Diary is explicitly attributed as team UI; individual scope is member/landing/TTS frontend, not Three.js or voice-model implementation.
+- `assets/profile.png`: user-provided portrait. Original bytes and aspect ratio retained.
+- `assets/lp/`: actual public advertiser and influencer LP captures from https://selfad.co.kr/lp/marketer and https://selfad.co.kr/lp/influencer on 2026-09-15. Chrome viewport 720×1280; all scroll-reveal sections were revealed before capturing. Actual full-page captures are 705 pixels wide. Promotional example data and later team changes may appear; these are not individual performance claims.
+- `marketer-scroll.mp4` and `influencer-scroll.mp4`: vertical pans of those real captures, not recordings of live interactions. H.264, 704×1252, 30fps, 26 seconds, no audio, fast-start. One pixel trimmed for even codec width; no upscaling. Web players have native controls, posters and no autoplay. PDF uses four representative stills and links to the web videos.
+- Rebuild videos with `python3 ver2/scripts/build_lp_videos.py CAPTURE_DIR FFMPEG_PATH`; requires Pillow and ffmpeg. Input names: `marketer-final.jpg`, `influencer-final.jpg`. Capture provenance and sizes are in `assets/lp/manifest.json`.
+- Earlier `assets/selfad-mobile-*.jpg` captures are retained as previous assets and are no longer shown in the current gallery.
+- `assets/irm-system-design.png` / `.svg`: verified system architecture, separating local Naver/Instagram collection, AWS Fargate YouTube collection and email sending, Google Sheets state/history and operational support. Rebuild with `scripts/build_irm_diagram.py` and Poppler.
+- `assets/sanchaekon-deployment-concept.png`: explanatory mockup of personal CI/CD/infrastructure work. Repeated Nginx denotes the same component in service and release flows. Does not claim automatic rollback.
+- PennyPal and Star Diary use existing repository images; team UI and individual frontend contributions are distinguished.
 
 ## Verification
 
-All eight PDF pages rendered and visually inspected. FAQ and IRM pages rechecked after final changes. HTML IDs, anchor targets, image alt text and local file targets validated. Responsive CSS provided; interactive browser testing was not performed in this change. The earlier version's tracked files are unchanged. No public push, deployment or application upload performed.
+All eight PDF pages were rendered and inspected during version 2 work; changed LP pages 3–4 were re-rendered and inspected after the video update. Both MP4s passed complete ffmpeg decoding; start/middle/end frames were reviewed. Native browser playback and local media references were checked before publication.

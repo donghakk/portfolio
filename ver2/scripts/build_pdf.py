@@ -115,12 +115,14 @@ y=header(p,3,'01')
 y=para(p['employment'],L,y,CW,8.4,13,MUTED)-17
 y=mobile_pair(p['images'][:2],y,365)
 y=section('문제와 선택',p['problem']+' '+p['decision'],y)
-y=para('현재 운영 UI · 2026.09.14 캡처. 화면에는 이후 팀 변경 사항이 포함될 수 있습니다.',L,y,CW,8.4,13,MUTED)
+y=para('실제 운영 LP · 2026.09.15 캡처. 서비스 소개용 예시 데이터와 팀 변경 사항을 포함합니다.',L,y,CW,8.4,13,MUTED)
+C.linkURL('https://donghakk.github.io/portfolio/ver2/#selfad',(L,62,W-L,81),relative=0,thickness=0)
+para('LP 스크롤 영상 보기 · donghakk.github.io/portfolio',L,78,CW,9,14,BLUE)
 finish(y,'selfad-main')
 
 page(4,'01 / SELFAD · IMPLEMENTATION')
-y=para('셀프애드 · 모바일 UI와 구현 범위',L,777,CW,22,32)-17
-y=mobile_pair([p['images'][2],p['images'][4]],y,365)
+y=para('셀프애드 · LP와 구현 범위',L,777,CW,22,32)-17
+y=mobile_pair(p['images'][2:4],y,365)
 y=para('내가 구현한 부분',L,y,CW,11,17,BLUE)-8
 y=bullets(p['implementation'],y)
 y=section('결과',p['result'],y)

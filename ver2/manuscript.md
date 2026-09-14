@@ -37,25 +37,25 @@ React 기반 제품 화면과 API를 연결하고, 반복 업무를 자동화하
 
 정규직 2026.05.01–06.30 / 퇴직 후 무급 프로젝트 참여 2026.07.01–현재
 
-![셀프애드 모바일 비즈 홈 실제 운영 화면](assets/selfad-mobile-home.jpg)
+### 광고주 LP
 
-비즈 홈 · 실제 운영 UI. 활동 요약·하단 메뉴의 모바일 구성을 보여줍니다. 캡처 시점에는 진행 중인 프로젝트가 없는 상태입니다.
+[스크롤 영상](assets/lp/marketer-scroll.mp4) · [운영 페이지](https://selfad.co.kr/lp/marketer)
 
-![셀프애드 모바일 광고주 메뉴를 펼친 화면](assets/selfad-mobile-menu.jpg)
+![광고주 LP](assets/lp/marketer-poster.png)
 
-모바일 메뉴 · 광고 업무 화면으로 이어지는 내비게이션. 본인 기여: 마이비즈 URL 기반 전환과 모바일 경로 정비.
+실제 LP 화면 캡처 기반 스크롤 영상 · 서비스 소개용 예시 데이터 포함.
 
-![셀프애드 모바일 FAQ 실제 운영 화면](assets/selfad-mobile-faq.jpg)
 
-FAQ · 질문 검색·분류의 모바일 화면. 본인 기여: FAQ·헤더 진입점·모바일 노출 구현.
 
-![셀프애드 모바일 인플루언서 가입 폼 실제 화면](assets/selfad-mobile-signup.jpg)
+### 인플루언서 LP
 
-인플루언서 가입 · 입력 전 실제 모바일 폼. 전체 가입 기능을 개인 단독 구현으로 제시하지 않습니다.
+[스크롤 영상](assets/lp/influencer-scroll.mp4) · [운영 페이지](https://selfad.co.kr/lp/influencer)
 
-![셀프애드 모바일 가입 동의 체크박스 실제 화면](assets/selfad-mobile-consent.jpg)
+![인플루언서 LP](assets/lp/influencer-poster.png)
 
-가입 동의 · 본인 기여: 모바일 동의 체크박스 표시 수정. 동의·가입 제출 없이 화면만 캡처했습니다.
+실제 LP 화면 캡처 기반 스크롤 영상 · 서비스 소개용 예시 데이터 포함.
+
+
 
 **문제**
 

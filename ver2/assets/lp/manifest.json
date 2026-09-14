@@ -1,0 +1,32 @@
+[
+  {
+    "role": "marketer",
+    "width": 704,
+    "height": 1252,
+    "fps": 30,
+    "duration": 26,
+    "bytes": 2973600,
+    "captureSize": [
+      705,
+      9600
+    ],
+    "source": "https://selfad.co.kr/lp/marketer",
+    "captured": "2026-09-15",
+    "method": "Actual full-page browser screenshot, vertically panned; not a recording of live interactions."
+  },
+  {
+    "role": "influencer",
+    "width": 704,
+    "height": 1252,
+    "fps": 30,
+    "duration": 26,
+    "bytes": 1906002,
+    "captureSize": [
+      705,
+      8844
+    ],
+    "source": "https://selfad.co.kr/lp/influencer",
+    "captured": "2026-09-15",
+    "method": "Actual full-page browser screenshot, vertically panned; not a recording of live interactions."
+  }
+]
