@@ -44,6 +44,16 @@ def shot(im,y,maxh=245):
 def bullets(items,y,size=10):
     for s in items:y=para('• '+s,L,y,CW,size,15,MUTED)-5
     return y-8
+def mobile_pair(images,y,height=365):
+    col=(CW-24)/2
+    bottoms=[]
+    for i,im in enumerate(images):
+        image=ImageReader(str(ROOT/im['src']));iw,ih=image.getSize()
+        h=min(height,col*ih/iw);w=h*iw/ih;x=L+i*(col+24)
+        C.setFillColor(colors.HexColor(PALE));C.rect(x,y-h,col,h,stroke=0,fill=1)
+        C.drawImage(image,x+(col-w)/2,y-h,w,h,mask='auto')
+        bottoms.append(para(im['shortCaption'],x,y-h-9,col,9,14,MUTED))
+    return min(bottoms)-18
 def evidence(p,y):
     y=para(p['evidence'],L,y,CW,8,12,MUTED)-7
     x=L
@@ -89,7 +99,7 @@ page(2,'INDEX / SELECTED WORK')
 para('Index',L,760,CW,38,48)
 para('제품 화면에서 운영까지, 직접 맡은 다섯 가지 사례',L,697,CW,12,19,MUTED)
 y=621
-entries=[('01','셀프애드','모바일 UI와 광고 업무 흐름','실제 운영 UI · 2 pages',3),('02','IRM','수집·검토·발송을 잇는 업무 자동화','설명용 UI 목업',5),('03','산책온','지도 표시와 CI/CD·배포 설계','본인 담당 범위 · 설명용 배포 목업',6),('04','SSAFY 프로젝트','04.1 PennyPal — 가입·검증·금융 탐색\n04.2 별일 — 회원·TTS 프론트엔드','실제 프로젝트 UI',7)]
+entries=[('01','셀프애드','모바일 UI와 광고 업무 흐름','실제 운영 UI · 2 pages',3),('02','IRM','수집·검토·발송을 잇는 업무 자동화','시스템 설계도',5),('03','산책온','지도 표시와 CI/CD·배포 설계','본인 담당 범위 · 설명용 배포 목업',6),('04','SSAFY 프로젝트','04.1 PennyPal — 가입·검증·금융 탐색\n04.2 별일 — 회원·TTS 프론트엔드','실제 프로젝트 UI',7)]
 for num,name,desc,meta,dest in entries:
     line(y+14);para(num,L,y,50,17,24,BLUE)
     para(name,L+64,y,CW-110,21,29)
@@ -103,16 +113,15 @@ finish(y,'index')
 p=D['projects'][0]
 y=header(p,3,'01')
 y=para(p['employment'],L,y,CW,8.4,13,MUTED)-17
-y=shot(p['images'][0],y,247)
+y=mobile_pair(p['images'][:2],y,365)
 y=section('문제와 선택',p['problem']+' '+p['decision'],y)
-y=section('본인 기여', 'React 기반 활동 홈, 마이비즈의 URL 기반 이동, 공통 모달·모바일 바텀시트와 FAQ를 구현했습니다. 기존 API를 화면 흐름에 맞게 조합하고 모바일 노출 문제를 정비했습니다.',y)
-y=para('다음 페이지에서 실제 FAQ 화면과 구현 범위를 이어서 소개합니다.',L,y,CW,9,14,BLUE)
+y=para('현재 운영 UI · 2026.09.14 캡처. 화면에는 이후 팀 변경 사항이 포함될 수 있습니다.',L,y,CW,8.4,13,MUTED)
 finish(y,'selfad-main')
 
 page(4,'01 / SELFAD · IMPLEMENTATION')
-y=para('셀프애드 · 화면과 구현 범위',L,777,CW,22,32)-17
-y=shot(p['images'][1],y,285)
-y=section('내가 구현한 부분','활동 홈·이동·공통 모달을 하나의 사용 흐름으로 정비했습니다.',y)
+y=para('셀프애드 · 모바일 UI와 구현 범위',L,777,CW,22,32)-17
+y=mobile_pair([p['images'][2],p['images'][4]],y,365)
+y=para('내가 구현한 부분',L,y,CW,11,17,BLUE)-8
 y=bullets(p['implementation'],y)
 y=section('결과',p['result'],y)
 y=para(p['scope'],L,y,CW,8.5,13,MUTED)-18
@@ -122,7 +131,7 @@ finish(y,'selfad-detail')
 p=D['projects'][1]
 y=header(p,5,'02')
 y=para(p['employment'],L,y,CW,8.4,13,MUTED)-16
-y=shot(p['images'][0],y,217)
+y=shot(p['images'][0],y,240)
 y=section('선택과 구현',p['decision'],y)
 y=bullets(['수집·정제 결과를 중복 관리, 검토, 발송 상태와 이력에 연결','발송 전 검증·한도·수신거부 처리와 실행 로그 구성','관리자 권한 요청을 철회하고 실행 역할·한정된 역할 전달 권한으로 요청 축소'],y)
 y=section('결과',p['result'],y)

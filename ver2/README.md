@@ -15,8 +15,8 @@ Order: introduction/career/education, Index, Selfad, IRM, Sanchaekon, SSAFY proj
 
 - `assets/profile.png`: user-provided portrait added to the introductory website section and PDF page 1. Original image bytes and aspect ratio retained.
 
-- `assets/selfad-home.jpg`, `assets/selfad-faq.jpg`: Chrome captures of the public operating site https://selfad.co.kr on 2026-09-14. FAQ is a direct screenshot region. No account login or customer records used. Home contains the service's own illustrative promotional data; the complete home page is not claimed as personal implementation.
-- `assets/irm-concept.png`: generated explanatory UI mockup, not the internal production UI. Illustrative channel icons and sample data; actual work uses Google Sheets, YouTube/Naver/Instagram collection, and the documented sending workflow.
+- `assets/selfad-mobile-*.jpg`: actual mobile Chrome captures from https://selfad.co.kr on 2026-09-14 (390×844 viewport override requested by the user). Existing advertiser login reused for Biz Home and navigation; public FAQ and empty influencer signup/consent captured. Screens show no names/contact/customer records, and no form entries or submissions occurred. Web includes five views; PDF uses four representative views. Current UI may include later team changes.
+- `assets/irm-system-design.png` / `.svg`: system architecture diagram built from verified implementation facts. Separates local Naver/Instagram collection, AWS Fargate YouTube collection and email sending, Google Sheets review/state/history, and operational support. Rebuild with `scripts/build_irm_diagram.py` and Poppler; no simulated product UI.
 - `assets/sanchaekon-deployment-concept.png`: generated explanatory mockup of personal CI/CD/infrastructure work. The repeated Nginx denotes the same component in service and release flows. Does not claim automatic rollback.
 - PennyPal and Star Diary images are preserved existing repository assets. Star Diary is explicitly attributed as team UI; individual scope is member/landing/TTS frontend, not Three.js or voice-model implementation.
 

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="white"/>
+<text x="55" y="58.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">IRM / SYSTEM ARCHITECTURE</text>
+<text x="55" y="114.97999999999999" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="39" fill="#14233b">수집 데이터를 검토와 발송, 운영 기록으로 연결</text>
+<text x="55" y="178.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">01  수집</text>
+<text x="605" y="178.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">02  검토 · 상태 관리</text>
+<text x="1145" y="178.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">03  검증 · 발송</text>
+<rect x="55" y="220" width="370" height="125" rx="12" fill="#f2f6fc" stroke="#c8d5e8" stroke-width="2"/>
+<text x="82" y="259.58" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="19" fill="#245de5">LOCAL</text>
+<text x="82" y="304.14" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="27" fill="#14233b">Naver · Instagram 수집</text>
+<rect x="55" y="395" width="370" height="125" rx="12" fill="#f2f6fc" stroke="#c8d5e8" stroke-width="2"/>
+<text x="82" y="434.58" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="19" fill="#245de5">AWS FARGATE</text>
+<text x="82" y="479.14" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="27" fill="#14233b">YouTube 수집</text>
+<rect x="605" y="260" width="370" height="240" rx="12" fill="#eaf1ff" stroke="#245de5" stroke-width="2"/>
+<text x="634" y="319.24" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="32" fill="#14233b">Google Sheets</text>
+<text x="634" y="367.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#14233b">수집 데이터 정리 · 중복 제거</text>
+<text x="634" y="409.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#14233b">담당자 검토 · 발송 상태 관리</text>
+<text x="634" y="451.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#14233b">발송 이력 보존</text>
+<rect x="1145" y="260" width="400" height="240" rx="12" fill="#f2f6fc" stroke="#c8d5e8" stroke-width="2"/>
+<text x="1174" y="307.58" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="19" fill="#245de5">AWS FARGATE</text>
+<text x="1174" y="361.14" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="27" fill="#14233b">발송 전 검증 · 한도 확인</text>
+<text x="1174" y="418.6" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="30" fill="#14233b">메일 발송</text>
+<text x="1174" y="467.04" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="22" fill="#50617a">수신거부 대상 반영</text>
+<polyline points="425,282 513,282 513,345 605,345" fill="none" stroke="#245de5" stroke-width="3"/>
+<polygon points="605,345 592.3937405670625,351.08951747755725 592.3937405670625,338.91048252244275" fill="#245de5"/>
+<polyline points="425,457 513,457 513,417 605,417" fill="none" stroke="#245de5" stroke-width="3"/>
+<polygon points="605,417 592.3937405670625,423.08951747755725 592.3937405670625,410.91048252244275" fill="#245de5"/>
+<polyline points="975,370 1145,370" fill="none" stroke="#245de5" stroke-width="3"/>
+<polygon points="1145,370 1132.3937405670624,376.08951747755725 1132.3937405670624,363.91048252244275" fill="#245de5"/>
+<text x="1000" y="345.22" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="21" fill="#50617a">발송 대상</text>
+<polyline points="1345,500 1345,568 790,568 790,500" fill="none" stroke="#245de5" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="790,500 796.0895174775573,512.6062594329375 783.9104825224427,512.6062594329375" fill="#245de5"/>
+<text x="900" y="602.04" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="22" fill="#50617a">발송 상태 · 이력 갱신</text>
+<rect x="55" y="663" width="1490" height="180" rx="12" fill="#ffffff" stroke="#c8d5e8" stroke-width="2"/>
+<text x="83" y="711.5" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="25" fill="#245de5">수신거부 처리</text>
+<text x="83" y="754.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#14233b">HMAC 토큰</text>
+<text x="83" y="794.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#50617a">Apps Script · Cloudflare Worker</text>
+<text x="629" y="711.5" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="25" fill="#245de5">실행 자원</text>
+<text x="629" y="754.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#14233b">ECR · EFS</text>
+<text x="629" y="794.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#50617a">Secrets Manager</text>
+<text x="1149" y="711.5" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="25" fill="#245de5">운영 확인</text>
+<text x="1149" y="754.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#14233b">CloudWatch 실행 로그</text>
+<text x="1149" y="794.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#50617a">Google Sheets 발송 이력</text>
+</svg>
