@@ -66,31 +66,41 @@
           "src": "assets/selfad-mobile-home.jpg",
           "alt": "셀프애드 모바일 비즈 홈 실제 운영 화면",
           "caption": "비즈 홈 · 실제 운영 UI. 활동 요약·하단 메뉴의 모바일 구성을 보여줍니다. 캡처 시점에는 진행 중인 프로젝트가 없는 상태입니다.",
-          "shortCaption": "비즈 홈 · 활동 요약과 하단 내비게이션"
+          "shortCaption": "비즈 홈 · 활동 요약과 하단 내비게이션",
+          "width": 375,
+          "height": 812
         },
         {
           "src": "assets/selfad-mobile-menu.jpg",
           "alt": "셀프애드 모바일 광고주 메뉴를 펼친 화면",
           "caption": "모바일 메뉴 · 광고 업무 화면으로 이어지는 내비게이션. 본인 기여: 마이비즈 URL 기반 전환과 모바일 경로 정비.",
-          "shortCaption": "광고주 메뉴 · URL 기반 화면 이동"
+          "shortCaption": "광고주 메뉴 · URL 기반 화면 이동",
+          "width": 375,
+          "height": 812
         },
         {
           "src": "assets/selfad-mobile-faq.jpg",
           "alt": "셀프애드 모바일 FAQ 실제 운영 화면",
           "caption": "FAQ · 질문 검색·분류의 모바일 화면. 본인 기여: FAQ·헤더 진입점·모바일 노출 구현.",
-          "shortCaption": "FAQ · 모바일 검색·분류와 노출"
+          "shortCaption": "FAQ · 모바일 검색·분류와 노출",
+          "width": 375,
+          "height": 812
         },
         {
           "src": "assets/selfad-mobile-signup.jpg",
           "alt": "셀프애드 모바일 인플루언서 가입 폼 실제 화면",
           "caption": "인플루언서 가입 · 입력 전 실제 모바일 폼. 전체 가입 기능을 개인 단독 구현으로 제시하지 않습니다.",
-          "shortCaption": "가입 폼 · 입력 전 모바일 화면"
+          "shortCaption": "가입 폼 · 입력 전 모바일 화면",
+          "width": 375,
+          "height": 812
         },
         {
           "src": "assets/selfad-mobile-consent.jpg",
           "alt": "셀프애드 모바일 가입 동의 체크박스 실제 화면",
           "caption": "가입 동의 · 본인 기여: 모바일 동의 체크박스 표시 수정. 동의·가입 제출 없이 화면만 캡처했습니다.",
-          "shortCaption": "가입 동의 · 모바일 체크박스 표시"
+          "shortCaption": "가입 동의 · 모바일 체크박스 표시",
+          "width": 375,
+          "height": 812
         }
       ]
     },
@@ -136,7 +146,9 @@
         {
           "src": "assets/irm-system-design.png",
           "alt": "IRM 시스템 설계도: 로컬 및 AWS 수집, Google Sheets 검토, Fargate 메일 발송과 운영 지원",
-          "caption": "시스템 설계 요약 · Naver·Instagram 수집은 로컬, YouTube 수집·메일 발송은 AWS Fargate에서 실행합니다. Google Sheets로 검토·상태·발송 이력을 연결합니다."
+          "caption": "시스템 설계 요약 · Naver·Instagram 수집은 로컬, YouTube 수집·메일 발송은 AWS Fargate에서 실행합니다. Google Sheets로 검토·상태·발송 이력을 연결합니다.",
+          "width": 1600,
+          "height": 900
         }
       ]
     },
@@ -182,7 +194,9 @@
         {
           "src": "assets/sanchaekon-deployment-concept.png",
           "alt": "본인이 담당한 산책온 CI/CD와 배포 설계의 설명용 목업",
-          "caption": "본인 담당 CI/CD·배포 설계의 설명용 목업. Nginx는 서비스 경로와 릴리스 흐름에서 같은 구성요소를 각각 표시했습니다."
+          "caption": "본인 담당 CI/CD·배포 설계의 설명용 목업. Nginx는 서비스 경로와 릴리스 흐름에서 같은 구성요소를 각각 표시했습니다.",
+          "width": 1672,
+          "height": 941
         }
       ]
     },
@@ -236,12 +250,16 @@
         {
           "src": "../assets/pennypal/signup.png",
           "alt": "PennyPal 회원가입 화면",
-          "caption": "회원가입 화면 · UI와 검증 모델 분리"
+          "caption": "회원가입 화면 · UI와 검증 모델 분리",
+          "width": 1000,
+          "height": 474
         },
         {
           "src": "../assets/pennypal/card-search.png",
           "alt": "PennyPal 금융 상품 탐색 화면",
-          "caption": "금융 탐색 화면 · 검색·데이터 연결 기여, 팀 화면 디자인 포함"
+          "caption": "금융 탐색 화면 · 검색·데이터 연결 기여, 팀 화면 디자인 포함",
+          "width": 1000,
+          "height": 513
         }
       ]
     },
@@ -295,7 +313,9 @@
         {
           "src": "../assets/stardiary/login.png",
           "alt": "별일 실제 로그인 UI 스크린샷",
-          "caption": "별일 저장소의 실제 서비스 UI · 팀 결과물. 본인 담당은 회원·랜딩·TTS 프론트엔드이며, Three.js 화면과 음성 합성 모델은 팀원 기여입니다."
+          "caption": "별일 저장소의 실제 서비스 UI · 팀 결과물. 본인 담당은 회원·랜딩·TTS 프론트엔드이며, Three.js 화면과 음성 합성 모델은 팀원 기여입니다.",
+          "width": 1000,
+          "height": 562
         }
       ]
     }

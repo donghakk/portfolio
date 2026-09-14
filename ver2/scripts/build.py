@@ -10,7 +10,7 @@ def timeline(items):
     return ''.join(f'<li><span>{e(x["date"])}</span><div><strong>{e(x["title"])}</strong><p>{e(x["detail"])}</p></div></li>' for x in items)
 
 def picture(im):
-    return f'<figure><a href="{e(im["src"])}" target="_blank" rel="noopener" aria-label="{e(im["alt"])} 크게 보기"><img src="{e(im["src"])}" alt="{e(im["alt"])}" loading="lazy"></a><figcaption>{e(im["caption"])}</figcaption></figure>'
+    return f'<figure><a href="{e(im["src"])}" target="_blank" rel="noopener" aria-label="{e(im["alt"])} 크게 보기"><img src="{e(im["src"])}" alt="{e(im["alt"])}" width="{im["width"]}" height="{im["height"]}" loading="lazy"></a><figcaption>{e(im["caption"])}</figcaption></figure>'
 
 def project(p, number):
     return f'''<article id="{p['id']}" class="case"><header class="case-heading"><span class="number">{number}</span><div><p class="eyebrow">{e(p['english'])}</p><h2>{e(p['name'])}</h2><p class="case-title">{e(p['title'])}</p></div></header>
