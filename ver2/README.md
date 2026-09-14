@@ -13,6 +13,8 @@ Order: introduction/career/education, Index, Selfad, IRM, Sanchaekon, SSAFY proj
 
 ## Image provenance
 
+- `assets/profile.png`: user-provided portrait added to the introductory website section and PDF page 1. Original image bytes and aspect ratio retained.
+
 - `assets/selfad-home.jpg`, `assets/selfad-faq.jpg`: Chrome captures of the public operating site https://selfad.co.kr on 2026-09-14. FAQ is a direct screenshot region. No account login or customer records used. Home contains the service's own illustrative promotional data; the complete home page is not claimed as personal implementation.
 - `assets/irm-concept.png`: generated explanatory UI mockup, not the internal production UI. Illustrative channel icons and sample data; actual work uses Google Sheets, YouTube/Naver/Instagram collection, and the documented sending workflow.
 - `assets/sanchaekon-deployment-concept.png`: generated explanatory mockup of personal CI/CD/infrastructure work. The repeated Nginx denotes the same component in service and release flows. Does not claim automatic rollback.

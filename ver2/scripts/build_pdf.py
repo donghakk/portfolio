@@ -64,8 +64,11 @@ def header(p,n,number,label=None):
     return y
 
 page(1,'INTRODUCTION / BACKGROUND')
-para('김동학',L,770,CW,17,25,BLUE)
-y=para('화면에서 시작해,\n업무가 끝나는 곳까지.',L,723,CW,31,43)-19
+para('김동학',L,770,CW-138,17,25,BLUE)
+portrait=ImageReader(str(ROOT/'assets/profile.png'))
+pw,ph=portrait.getSize(); portrait_w=108; portrait_h=portrait_w*ph/pw
+C.drawImage(portrait,W-L-portrait_w,774-portrait_h,portrait_w,portrait_h,mask='auto')
+y=para('화면에서 시작해,\n업무가 끝나는 곳까지.',L,723,CW-138,29,40)-19
 y=para(D['intro'],L,y,CW,11,18,MUTED)-18
 y=para('사용자가 일을 끝낼 수 있는 흐름을 만듭니다.\n화면의 사용성, 데이터 연결, 운영의 제약을 함께 살핍니다.',L,y,CW,11,18)-24
 line(y);y-=20
