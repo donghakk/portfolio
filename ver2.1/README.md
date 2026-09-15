@@ -12,10 +12,14 @@ Visual direction: bright editorial typography, cobalt and ink accents, a translu
 
 Progressive enhancement highlights the section being read. All content remains visible without JavaScript; reduced-motion preferences disable transitions and entrance motion. Keyboard focus indicators remain available. The two lazy-loaded iframes have descriptive titles and adjacent links to open the operating pages separately.
 
-Validation: visible text, ordered IDs, link targets and media are compared against ver2. Local asset references and JavaScript syntax are checked. Browser visual/interaction QA was not performed for this styling study.
+Validation: text and section order outside the requested LP media replacement are compared against ver2. Local references and JavaScript syntax are checked. Entry and section-navigation behavior were subsequently tested in the browser for the iframe scroll correction.
 
 ## Live Selfad LPs
 
 - Advertiser: https://selfad.co.kr/lp/marketer
 - Influencer: https://selfad.co.kr/lp/influencer
 - HTTP headers and the HTML entrypoint were checked on 2026-09-15: neither X-Frame-Options nor CSP frame-ancestors restrictions were present. Live availability and content follow the source site. No copied product HTML or login session is bundled.
+
+## Entry behavior
+
+The root address redirects explicitly to `/ver2.1/#intro`. Remote LP frames receive their `src` only when they intersect the viewport; native lazy loading alone can start offscreen frames early enough to take focus and scroll the parent away from the introduction. Direct section links still work. Without JavaScript, the adjacent operating-page links remain available.
