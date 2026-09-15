@@ -1,6 +1,6 @@
 # Portfolio ver2.1
 
-Styling study of the preserved ver2 portfolio. The content, section sequence and responsive column structure remain the same. At the user’s request, the Selfad media section embeds the two live LPs instead of the ver2 video players. The original ver2 source and root default route remain intact.
+Current public edition based on the preserved ver2 portfolio. The content, section sequence and responsive column structure remain the same. At the user’s request, the Selfad media section embeds the two live LPs instead of the ver2 video players. The original ver2 source is preserved. The root portfolio address now redirects to this version, as requested by the user.
 
 - Preview / public route: `/ver2.1/`
 - Original: `/ver2/`
