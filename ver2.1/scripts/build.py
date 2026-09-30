@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 source = (ROOT.parent / 'ver2/index.html').read_text()
 source = source.replace('포트폴리오 · Ver.2</title>', '포트폴리오 · Ver.2.1</title>')
-# Share the original assets/PDF; preserve original text, order, anchors and layout.
+# Share preserved v2 assets except the renamed diagram; retain existing section anchors.
 for attr in ('src', 'href', 'poster'):
     source = source.replace(f'{attr}="assets/', f'{attr}="../ver2/assets/')
 source = source.replace('업무가 끝나는 곳까지.</h1>', '<span>업무가 끝나는 곳까지.</span></h1>')
@@ -19,5 +19,14 @@ media = '<div class="lp-embeds">' + ''.join(cards) + '</div><p class="media-note
 source, count = re.subn(r'<div class="lp-videos">.*?<p class="media-note">.*?</p>', lambda _: media, source, count=1, flags=re.S)
 assert count == 1, 'Expected the original Selfad video block'
 source = source.replace('</head>', '<meta name="theme-color" content="#f7f9fc"><script src="interactions.js?v=20260915-entry" defer></script></head>')
+terms = json.loads((ROOT / 'data/terminology.json').read_text())
+source = source.replace('셀프애드·IRM·산책온', '셀프애드·' + terms['display_name'] + '·산책온')
+source = source.replace('href="#irm">IRM</a>', 'href="#irm">' + terms['short_name'] + '</a>')
+source = source.replace('<h3>IRM</h3>', '<h3>' + terms['display_name'] + '</h3>')
+source = source.replace('<h2>IRM</h2>', '<h2>' + terms['display_name'] + '</h2>')
+source = source.replace('IRM 시스템 설계도', terms['display_name'] + ' 시스템 설계도')
+source = source.replace('../ver2/assets/irm-system-design.png', 'assets/influencer-automation-system-design.png')
+source = source.replace('../downloads/kim-donghak-portfolio-v2.pdf', '../downloads/kim-donghak-portfolio-v2.1.pdf')
+assert 'IRM' not in source
 (ROOT / 'index.html').write_text(source)
 print('Built ver2.1/index.html from preserved v2 content')
