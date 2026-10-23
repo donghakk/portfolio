@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
 <rect width="1600" height="900" fill="white"/>
-<text x="55" y="58.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">인플루언서 발굴·메일 발송 자동화 / SYSTEM ARCHITECTURE</text>
+<text x="55" y="58.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">영업 업무 자동화 도구 / SYSTEM ARCHITECTURE</text>
 <text x="55" y="114.97999999999999" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="39" fill="#14233b">수집 데이터를 검토와 발송, 운영 기록으로 연결</text>
 <text x="55" y="178.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">01  수집</text>
 <text x="605" y="178.86" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="23" fill="#245de5">02  검토 · 상태 관리</text>

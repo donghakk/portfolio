@@ -10,6 +10,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph
 from reportlab.lib.utils import ImageReader
 from pypdf import PdfReader
+from terminology import normalize_text
 
 EDITION=Path(__file__).resolve().parents[1]
 ROOT=EDITION.parent/'ver2'
@@ -25,7 +26,7 @@ C=canvas.Canvas(str(OUT),pagesize=(W,H))
 C.setTitle('김동학 포트폴리오 · Ver.2.1'); C.setAuthor('김동학')
 
 def para(s,x,y,w,size=10.2,leading=16,color=INK):
-    s=s.replace('–','-').replace('—','-')
+    s=normalize_text(s).replace('–','-').replace('—','-')
     p=Paragraph(escape(s).replace('\n','<br/>'),ParagraphStyle('p',fontName='KR',fontSize=size,leading=leading,textColor=colors.HexColor(color),wordWrap='CJK'))
     _,h=p.wrap(w,H);p.drawOn(C,x,y-h);return y-h
 def line(y):

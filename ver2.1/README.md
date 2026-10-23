@@ -25,8 +25,10 @@ Validation: text and section order outside the requested LP media replacement ar
 The root address redirects explicitly to `/ver2.1/#intro`. Remote LP frames receive their `src` only when they intersect the viewport; native lazy loading alone can start offscreen frames early enough to take focus and scroll the parent away from the introduction. Direct section links still work. Without JavaScript, the adjacent operating-page links remain available.
 
 
-## Public project terminology (2026-09-30)
+## Public project terminology (2026-10-16)
 
-At the user's request, the former internal project label is now “인플루언서 발굴·메일 발송 자동화 도구”; compact navigation uses “영업 자동화”. `data/terminology.json` supplies the web heading, PDF, and architecture diagram. Existing `#irm` fragment links continue to work. Original ver2 content and PDF remain unchanged.
+At the user's request, the project label is now “영업 업무 자동화 도구” everywhere, including navigation, headings, accessibility text, PDF, and the architecture diagram. `data/terminology.json` is the current naming source. `scripts/terminology.py` converts the preserved source labels when building the current web and PDF, removes duplicate “도구” wording, and adjusts affected Korean particles. Existing `#irm` fragment links, code identifiers and asset paths continue to work. Original ver2 content and PDF remain unchanged.
 
 Build the diagram with `scripts/build_automation_diagram.py`, render its intermediate PDF from `/private/tmp/career-portfolio-v21-qa/` to `assets/influencer-automation-system-design.png` at 1600×900 with pdftoppm, then run `scripts/build_pdf.py` and `scripts/build.py`. Python requires reportlab and pypdf; use PYTHONDONTWRITEBYTECODE=1.
+
+Local validation on 2026-10-16: rebuilt the HTML, diagram SVG/PNG and eight-page PDF; checked the new name in all rendered labels and accessibility text; verified local links and the preserved `#irm` anchor. PDF pages 2 and 5 were rendered and visually reviewed. Chrome previews at 1440, 820 and 390 pixels showed the new heading and navigation without page overflow. Publication uses the existing main-branch GitHub Pages deployment; the preserved ver2 edition remains unchanged.

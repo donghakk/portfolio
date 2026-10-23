@@ -5,8 +5,8 @@
 - 공개 사이트: https://donghakk.github.io/portfolio/ (현재 `/ver2.1/`로 이동)
 - 현재 웹: `ver2.1/index.html` / 보존 원본·공통 원고: `ver2/index.html`, `ver2/data/portfolio.json`
 - 읽기용 원고: `ver2/manuscript.md`
-- 현재 PDF: `downloads/kim-donghak-portfolio-v2.pdf` (8쪽)
-- 구성: 소개·사진·경력·교육 → Index → 셀프애드 → IRM → 산책온 → SSAFY(PennyPal·별일)
+- 현재 PDF: `downloads/kim-donghak-portfolio-v2.1.pdf` (8쪽)
+- 구성: 소개·사진·경력·교육 → Index → 셀프애드 → 영업 업무 자동화 도구 → 산책온 → SSAFY(PennyPal·별일)
 
 ## 빌드
 
@@ -14,11 +14,13 @@
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 ver2.1/scripts/build.py
-PYTHONDONTWRITEBYTECODE=1 python3 ver2/scripts/build_pdf.py
+PYTHONDONTWRITEBYTECODE=1 python3 ver2.1/scripts/build_pdf.py
 PYTHONDONTWRITEBYTECODE=1 python3 -m http.server 4317 --bind 127.0.0.1
 ```
 
 기존 루트 `scripts/`와 `data/`는 이전 버전입니다. 현재 웹 스타일은 `ver2.1/`에서 수정합니다. `ver2/`는 원본으로 보존하며 ver2.1 빌드가 해당 원고·자산을 참조합니다. 원고 변경 후 웹·PDF를 함께 생성하고 PDF를 렌더링해 확인합니다.
+
+2026-10-16 사용자 지정에 따라 현재판의 프로젝트명은 **영업 업무 자동화 도구**입니다. `ver2.1/data/terminology.json`의 명칭을 웹·PDF·도식에 함께 적용합니다. 도식 변경 시 `ver2.1/README.md`의 재생성 순서를 따릅니다. 보존 원본의 내부 약어는 현재판 빌드에서 정규화하며, 기존 링크와 파일 경로는 유지합니다.
 
 ## 미디어와 배포
 
